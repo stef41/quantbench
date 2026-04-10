@@ -9,7 +9,7 @@ description = "Quantization quality analyzer — pure-Python GGUF/safetensors pa
 readme = "README.md"
 license = {text = "Apache-2.0"}
 requires-python = ">=3.9"
-authors = [{ name = "Zacharie Bhatti" }]
+authors = [{ name = "Zacharie B" }]
 keywords = [
     "quantization",
     "gguf",
