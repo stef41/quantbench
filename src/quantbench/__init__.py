@@ -57,6 +57,21 @@ from quantbench.report import (
     save_json,
     load_json,
 )
+from quantbench.matrix import (
+    ComparisonMatrix,
+    FormatComparison,
+    KNOWN_FORMATS,
+    QuantFormatSpec,
+    format_comparison_table,
+)
+from quantbench.bandwidth import (
+    BandwidthEstimate,
+    BandwidthEstimator,
+    GPUSpec,
+    KNOWN_GPUS,
+    compare_gpus,
+    format_bandwidth_report,
+)
 
 __all__ = [
     "DType",
@@ -99,4 +114,17 @@ __all__ = [
     "recommend_mixed_quant",
     "report_to_dict",
     "save_json",
+    # matrix
+    "ComparisonMatrix",
+    "FormatComparison",
+    "KNOWN_FORMATS",
+    "QuantFormatSpec",
+    "format_comparison_table",
+    # bandwidth
+    "BandwidthEstimate",
+    "BandwidthEstimator",
+    "GPUSpec",
+    "KNOWN_GPUS",
+    "compare_gpus",
+    "format_bandwidth_report",
 ]
