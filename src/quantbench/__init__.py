@@ -1,5 +1,7 @@
 """quantbench — Quantization quality analyzer."""
 
+__version__ = "0.2.0"
+
 from __future__ import annotations
 
 from quantbench._types import (
