@@ -1,13 +1,13 @@
 """Tests for quantbench.bandwidth."""
 
-import math
 
 import pytest
+
 from quantbench.bandwidth import (
+    KNOWN_GPUS,
     BandwidthEstimate,
     BandwidthEstimator,
     GPUSpec,
-    KNOWN_GPUS,
     compare_gpus,
     format_bandwidth_report,
 )
@@ -186,6 +186,6 @@ class TestFormatBandwidthReport:
     def test_sorted_by_time(self):
         results = compare_gpus(10.0)
         report = format_bandwidth_report(results)
-        lines = [l for l in report.split("\n") if l.strip() and "---" not in l]
+        [l for l in report.split("\n") if l.strip() and "---" not in l]
         # Just verify it's a non-empty string containing GPU names
         assert any(gpu.name in report for gpu in KNOWN_GPUS.values())

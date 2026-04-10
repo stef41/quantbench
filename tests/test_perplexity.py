@@ -4,8 +4,6 @@ from __future__ import annotations
 
 import math
 
-import pytest
-
 from quantbench._types import (
     DType,
     LayerInfo,
@@ -23,7 +21,6 @@ from quantbench.perplexity import (
     perplexity_from_logprobs,
     quality_score,
 )
-
 
 # ── helpers ────────────────────────────────────────────────────────────
 

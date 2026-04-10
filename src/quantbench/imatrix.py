@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import math
 import struct
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, List, Optional, Union
+from typing import Dict, Optional, Union
 
 from quantbench._types import QuantbenchError
 

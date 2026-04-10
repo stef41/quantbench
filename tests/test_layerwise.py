@@ -1,6 +1,5 @@
 """Tests for quantbench.layerwise."""
 
-import pytest
 from quantbench._types import DType, LayerInfo, ModelProfile, QuantFormat, TensorInfo
 from quantbench.layerwise import analyze_layers, layer_sensitivity, recommend_mixed_quant
 

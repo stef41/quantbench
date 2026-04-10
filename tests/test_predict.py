@@ -1,6 +1,7 @@
 """Tests for quantbench.predict."""
 
 import pytest
+
 from quantbench._types import DType, LayerInfo, ModelProfile, QuantFormat, QuantProfile, TensorInfo
 from quantbench.predict import estimate_quality, perplexity_delta
 

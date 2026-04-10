@@ -1,6 +1,5 @@
 """Edge-case and hardened tests for quantbench modules."""
 
-import math
 import pytest
 
 from quantbench._types import (
@@ -10,7 +9,6 @@ from quantbench._types import (
     QuantFormat,
     QuantMethod,
     QuantProfile,
-    QualityEstimate,
     TensorInfo,
 )
 from quantbench.compare import compare_formats, compare_profiles
@@ -20,7 +18,7 @@ from quantbench.layerwise import (
     layer_sensitivity,
     recommend_mixed_quant,
 )
-from quantbench.predict import estimate_quality, perplexity_delta, _interpolate_perplexity
+from quantbench.predict import _interpolate_perplexity, estimate_quality, perplexity_delta
 
 
 def _profile(

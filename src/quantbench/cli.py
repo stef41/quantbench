@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-import sys
 from pathlib import Path
 from typing import Optional
 
@@ -27,7 +26,12 @@ def _build_cli():  # type: ignore[no-untyped-def]
         """Profile a quantized model file (GGUF or safetensors)."""
         from quantbench.predict import estimate_quality
         from quantbench.profile import profile_gguf, profile_safetensors
-        from quantbench.report import format_markdown, format_report_rich, format_report_text, save_json
+        from quantbench.report import (
+            format_markdown,
+            format_report_rich,
+            format_report_text,
+            save_json,
+        )
 
         p = Path(model_path)
         if p.suffix == ".gguf":

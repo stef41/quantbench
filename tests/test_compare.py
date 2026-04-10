@@ -1,7 +1,6 @@
 """Tests for quantbench.compare."""
 
-import pytest
-from quantbench._types import DType, LayerInfo, ModelProfile, QuantFormat, QuantProfile, TensorInfo
+from quantbench._types import DType, ModelProfile, QuantFormat, QuantProfile, TensorInfo
 from quantbench.compare import compare_formats, compare_profiles
 
 

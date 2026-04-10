@@ -1,15 +1,15 @@
 """Tests for quantbench._types."""
 
 import pytest
+
 from quantbench._types import (
     DType,
     LayerInfo,
     ModelProfile,
+    QualityEstimate,
+    QuantbenchError,
     QuantFormat,
     QuantMethod,
-    QuantProfile,
-    QuantbenchError,
-    QualityEstimate,
     TensorInfo,
 )
 

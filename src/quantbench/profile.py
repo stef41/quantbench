@@ -5,16 +5,16 @@ from __future__ import annotations
 import json
 import struct
 from pathlib import Path
-from typing import Any, BinaryIO, Dict, List, Optional
+from typing import Any, BinaryIO, Dict, List
 
 from quantbench._types import (
     DType,
     LayerInfo,
     ModelProfile,
+    QuantbenchError,
     QuantFormat,
     QuantMethod,
     QuantProfile,
-    QuantbenchError,
     TensorInfo,
 )
 

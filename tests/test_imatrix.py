@@ -2,9 +2,7 @@
 
 from __future__ import annotations
 
-import math
 import struct
-import tempfile
 from pathlib import Path
 
 import pytest

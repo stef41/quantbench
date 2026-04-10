@@ -3,10 +3,9 @@
 from __future__ import annotations
 
 import math
-from typing import Any, Dict, List, Optional
+from typing import List
 
-from quantbench._types import DType, ModelProfile, QualityEstimate
-
+from quantbench._types import ModelProfile, QualityEstimate
 
 # Empirical perplexity delta estimates per bits-per-weight
 # Based on published quantization benchmarks (llama.cpp, GPTQ papers)

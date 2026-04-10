@@ -14,7 +14,6 @@ from quantbench._types import (
 )
 from quantbench.recommend import Recommendation, format_recommendation, recommend
 
-
 # ── helpers ──────────────────────────────────────────────────────────────
 
 

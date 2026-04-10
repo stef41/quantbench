@@ -2,15 +2,14 @@
 
 import json
 import struct
-import tempfile
 from pathlib import Path
 
 import pytest
+
 from quantbench._types import (
     DType,
-    ModelProfile,
-    QuantFormat,
     QuantbenchError,
+    QuantFormat,
     TensorInfo,
 )
 from quantbench.profile import (

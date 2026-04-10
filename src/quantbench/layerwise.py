@@ -2,11 +2,9 @@
 
 from __future__ import annotations
 
-import math
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
-from quantbench._types import DType, LayerInfo, ModelProfile, TensorInfo
-
+from quantbench._types import DType, ModelProfile
 
 # Sensitivity heuristics based on layer position and type
 _SENSITIVITY_KEYWORDS = {

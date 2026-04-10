@@ -1,10 +1,15 @@
 """Tests for quantbench.report."""
 
 import json
-from pathlib import Path
 
-import pytest
-from quantbench._types import DType, ModelProfile, QuantFormat, QuantProfile, QualityEstimate, TensorInfo
+from quantbench._types import (
+    DType,
+    ModelProfile,
+    QualityEstimate,
+    QuantFormat,
+    QuantProfile,
+    TensorInfo,
+)
 from quantbench.report import (
     format_markdown,
     format_report_rich,

@@ -1,12 +1,11 @@
 """Tests for quantbench.cli."""
 
-import json
 import struct
-import tempfile
 from pathlib import Path
 
 import pytest
 from click.testing import CliRunner
+
 from quantbench.cli import cli
 
 

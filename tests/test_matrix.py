@@ -7,12 +7,11 @@ from quantbench.matrix import (
     ComparisonMatrix,
     FormatComparison,
     QuantFormatSpec,
-    format_comparison_table,
     _accuracy_estimate,
-    _speed_estimate,
     _model_size_gb,
+    _speed_estimate,
+    format_comparison_table,
 )
-
 
 # ── QuantFormatSpec ──────────────────────────────────────────────────────────
 
