@@ -19,6 +19,14 @@ from quantbench.layerwise import (
     layer_sensitivity,
     recommend_mixed_quant,
 )
+from quantbench.imatrix import (
+    ImatrixAnalysis,
+    ImatrixData,
+    ImatrixEntry,
+    analyze_imatrix,
+    format_imatrix_report,
+    parse_imatrix,
+)
 from quantbench.compare import (
     compare_profiles,
     compare_formats,
@@ -43,6 +51,9 @@ from quantbench.report import (
 
 __all__ = [
     "DType",
+    "ImatrixAnalysis",
+    "ImatrixData",
+    "ImatrixEntry",
     "LayerInfo",
     "ModelProfile",
     "QuantFormat",
@@ -52,16 +63,19 @@ __all__ = [
     "QualityEstimate",
     "Recommendation",
     "TensorInfo",
+    "analyze_imatrix",
     "analyze_layers",
     "compare_formats",
     "compare_profiles",
     "estimate_quality",
+    "format_imatrix_report",
     "format_markdown",
     "format_recommendation",
     "format_report_rich",
     "format_report_text",
     "layer_sensitivity",
     "load_json",
+    "parse_imatrix",
     "perplexity_delta",
     "profile_from_dict",
     "profile_gguf",
