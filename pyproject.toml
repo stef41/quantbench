@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "quantbench"
-version = "0.2.0"
+version = "0.3.0"
 description = "Quantization quality analyzer — pure-Python GGUF/safetensors parsing, layerwise analysis, quality prediction. Zero deps."
 readme = "README.md"
 license = {text = "Apache-2.0"}
