@@ -27,6 +27,11 @@ from quantbench.predict import (
     estimate_quality,
     perplexity_delta,
 )
+from quantbench.recommend import (
+    Recommendation,
+    recommend,
+    format_recommendation,
+)
 from quantbench.report import (
     format_report_text,
     format_report_rich,
@@ -45,12 +50,14 @@ __all__ = [
     "QuantProfile",
     "QuantbenchError",
     "QualityEstimate",
+    "Recommendation",
     "TensorInfo",
     "analyze_layers",
     "compare_formats",
     "compare_profiles",
     "estimate_quality",
     "format_markdown",
+    "format_recommendation",
     "format_report_rich",
     "format_report_text",
     "layer_sensitivity",
@@ -59,6 +66,7 @@ __all__ = [
     "profile_from_dict",
     "profile_gguf",
     "profile_safetensors",
+    "recommend",
     "recommend_mixed_quant",
     "report_to_dict",
     "save_json",
